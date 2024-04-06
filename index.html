@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elec Bill</title>
+    <link rel="stylesheet" href="assests/css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cantarell&family=Italianno&family=Ma+Shan+Zheng&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwigley&family=Raleway:wght@100;400&family=Roboto:wght@100&family=Source+Code+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main col-12 d-flex">
+
+        <section class="routes col-md-2 d-none d-md-block ">
+            <div class="router_sub d-flex flex-column pt-2">
+                <div class="logo d-flex justify-content-center">
+                    <h2>Smart</h2>
+                  </div>
+                  <div class="menu d-flex flex-column ps-3 justify-content-evenly pt-5">
+                    <span class="menu_optn actived"><i class="fa-solid fa-rectangle-list"></i>Dashboard</span>
+                    <span class="menu_optn"><i class="fa-solid fa-chart-line"></i>Analysis</span>
+                    <span class="menu_optn"><i class="fa-solid fa-credit-card"></i>Payments</span>
+                    <span class="menu_optn"><i class="fa-solid fa-folder"></i></i>Report Issue</span>
+                  </div>
+                  <div class="logout ps-5 pt-5 mt-5">
+                    <span><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</span>
+                  </div>
+            </div>
+        </section>
+      
+
+
+      <div class="dashboard col-md-10  pt-4 pb-5">
+
+        <section id="navbar">
+            <div class="nav_bar col-12 d-flex">
+                <div class="topics col-md-3 ps-3">
+                  <h2>DashBoard</h2>
+                </div>
+                <div class="searchbar col-md-6">
+                  <input type="text" placeholder="Type in to Search" class="p-1 form-control"/>
+                </div>
+                <div class="signin col-md-3 d-flex justify-content-center align-items-center">
+                  <img src="assests/images/user.jpg" class="profile me-2">
+                  <span>John</span>
+                </div>
+              </div>
+        </section>
+        
+        <section id=" user consumption">
+            <div class="unit_detials_main container-fluid col-12 mt-5 d-flex">
+
+                <div class="consumption_container col-md-8 p-3">
+                    <h3>Consumption</h3>
+                    <div class="d-flex consumption_detials pt-3">
+                        <div class="unit_detials container col-md-8 row g-3">
+    
+                            <div class="d-flex col-12 con_main">
+                                <div class="con col-4">
+                                    <p>Status</p>
+                                    <h5>Active</h5>
+                                </div>
+                                <div class="con col-4">
+                                    <p>Current</p>
+                                    <h5>2230 kwh</h5>
+                                </div>
+                                <div class="con col-4">
+                                    <p>Last Month</p>
+                                    <h5>2100 kwh</h5>
+                                </div>
+                            </div>
+    
+                            <div class="d-flex col-12 con_main">
+                                <div class="con col-6">
+                                    <p>This Month</p>
+                                    <h5>130 kwh</h5>
+                                </div>
+                                <div class="con col-6">
+                                    <p>Fare Estimated</p>
+                                    <h5>RS 663/-</h5>
+                                </div>
+                            </div>
+    
+                            <div class="d-flex col-12 con_main">
+                                <div class="con sub3 col-12">
+                                    <p>Real Time Power Consumed</p>
+                                    <h5>2230 kwh</h5>
+                                    <span><i class="fa-solid fa-arrow-trend-up"></i>+22%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 img d-flex justify-content-center">
+                            <img src="assests/images/energymeter.png" alt="">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="applainces col-md-4 mx-2 p-4 d-flex flex-column align-items-center">
+                    <div class="title d-flex justify-content-between pb-2" >
+                        <h3>Appliances</h3>
+                        <select name="applainces" id="select_applainces">
+                            <option value="Air Conditioner">Air Conditioner</option>
+                            <option value="Telivision">Telivision</option>
+                            <option value="Mixer">Mixer</option>
+                            <option value="Washing Machine">Washing Machine</option>
+                          </select>
+                    </div>
+                    <img src="assests/images/washingmachine.png" alt="">
+                    <div class="d-flex justify-content-evenly col-12 pt-3">
+                        <div class="consumed">
+                            <p>This Month</p>
+                            <h5>30 kwh</h5>
+                        </div>
+                        <div class="consumed">
+                            <p>Overall</p>
+                            <h5>400 kwh</h5>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+        
+        <section id="meter detials">
+            <div class="status col-12 container-fluid pt-5 d-flex">
+                <div class="col-md-6 row">
+    
+                    <div class="col-md-12 month p-4">
+                        <div class="d-flex justify-content-between col-12">
+                            <div class="title d-flex flex-column justify-content-start">
+                                <h3>Monthy Consumption</h3>
+                                <p>updated few minutes ago</p>  
+                            </div>
+                            <i class="fa-solid fa-arrow-right pt-5"></i>
+                        </div>
+                        
+                        <div class="month_detials d-flex justify-content-evenly">
+    
+                            <div class="month_card p-3 d-flex flex-column justify-content-evenly align-items-center">
+                                <h6>April</h6>
+                                    <h5>RS 663 <i class="fa-solid fa-arrow-up"></i></h5>
+                                   
+                                <h6>130 kwh</h6>
+                            </div>
+                            <div class="month_card p-3 d-flex flex-column justify-content-evenly align-items-center">
+                                <h6>April</h6>
+                                    <h5>RS 663 <i class="fa-solid fa-arrow-down"></i></h5>
+                                <h6>130 kwh</h6>
+                            </div>
+                            <div class="month_card p-3 d-flex flex-column justify-content-evenly align-items-center">
+                                <h6>April</h6>
+                                    <h5>RS 663 <i class="fa-solid fa-arrow-up"></i></h5>
+                                   
+                                <h6>130 kwh</h6>
+                            </div>
+                            <div class="month_card p-3 d-flex flex-column justify-content-evenly align-items-center">
+                                <h6>April</h6>
+                                    <h5>RS 663 <i class="fa-solid fa-arrow-up"></i></h5>
+                                   
+                                <h6>130 kwh</h6>
+                            </div>
+    
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-12 avg_detials p-1 mt-1">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <svg version="1.1" style="font-family: Montserrat; font-size: 12px;" xmlns="http://www.w3.org/2000/svg" width="500" height="150" viewBox="0 0 500 200" aria-hidden="false" aria-label="Interactive chart"><defs aria-hidden="true"><clipPath ><rect x="0" y="0" width="424" height="82" fill="none"></rect></clipPath><clipPath ><rect x="0" y="0" width="424" height="82" fill="none"></rect></clipPath></defs><rect fill="#ffffff" x="0" y="0" width="500" height="200" rx="0" ry="0" aria-hidden="true"></rect><rect fill="none" x="66" y="45" width="424" height="82" aria-hidden="true"></rect><g data-z-index="0" aria-hidden="true"></g><rect fill="none" data-z-index="1" x="66" y="45" width="424" height="82" aria-hidden="true"></rect><g data-z-index="1" aria-hidden="true"><path fill="none" stroke-dasharray="none" data-z-index="1" d="M 150.5 45 L 150.5 127" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" d="M 235.5 45 L 235.5 127" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" d="M 319.5 45 L 319.5 127" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" d="M 404.5 45 L 404.5 127" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" d="M 489.5 45 L 489.5 127" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" d="M 65.5 45 L 65.5 127" opacity="1"></path></g><g data-z-index="1" aria-hidden="true"><path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none" data-z-index="1" d="M 66 86.5 L 490 86.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none" data-z-index="1" d="M 66 127.5 L 490 127.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none" data-z-index="1" d="M 66 44.5 L 490 44.5" opacity="1"></path></g><g data-z-index="2" aria-hidden="true"><path fill="none" stroke="#ccd6eb" stroke-width="1" data-z-index="7" d="M 66 127.5 L 490 127.5"></path></g><g data-z-index="2" aria-hidden="true"><text font-family='Montserrat-Regular,Montserrat' x="24.5" data-z-index="7" text-anchor="middle" transform="translate(0,0) rotate(270 24.5 86)" style="color: rgb(102, 102, 102); fill: rgb(102, 102, 102);" y="86">Value</text><path fill="none" data-z-index="7" d="M 66 45 L 66 127"></path></g><g data-z-index="3" aria-hidden="false"><g data-z-index="0.1" opacity="1" transform="translate(66,45) scale(1 1)" clip-path="url(#highcharts-h612v5x-330-)" aria-hidden="true"><path fill="none" d="M 42.4 66.42 C 42.4 66.42 93.28 62.238 127.2 58.22 C 161.12 54.202 178.07999999999998 49.855999999999995 212 46.33 C 245.92 42.804 262.88 46.33 296.8 40.59 C 330.72 34.85000000000001 381.6 15.170000000000002 381.6 15.170000000000002" data-z-index="1" stroke="#f5800c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 42.4 66.42 C 42.4 66.42 93.28 62.238 127.2 58.22 C 161.12 54.202 178.07999999999998 49.855999999999995 212 46.33 C 245.92 42.804 262.88 46.33 296.8 40.59 C 330.72 34.85000000000001 381.6 15.170000000000002 381.6 15.170000000000002" data-z-index="2" stroke-linecap="round" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="22" style="cursor: pointer;"></path></g><g data-z-index="0.1" opacity="1" transform="translate(66,45) scale(1 1)" clip-path="none" style="cursor: pointer;" aria-hidden="false"><path fill="#f5800c" d="M 212 46.33 A 0 0 0 1 1 212 46.33 Z" data-z-index="-1" fill-opacity="0.25" visibility="hidden"></path><path fill="#f5800c" d="M 42 70.42 A 4 4 0 1 1 42.00399999933334 70.41999800000016 Z" opacity="1" tabindex="-1" role="img" aria-label="Jan, 538. 2024." style="outline: none;"></path><path fill="#f5800c" d="M 127 62.22 A 4 4 0 1 1 127.00399999933333 62.21999800000017 Z" opacity="1" tabindex="-1" role="img" aria-label="Feb, 558. 2024." style="outline: none;"></path><path fill="#f5800c" d="M 212 50.33 A 4 4 0 1 1 212.00399999933333 50.32999800000017 Z" opacity="1" tabindex="-1" role="img" aria-label="Mar, 587. 2024." style="outline: none;" stroke-width="0.00002301630648759989"></path><path fill="#f5800c" d="M 296 44.59 A 4 4 0 1 1 296.00399999933336 44.58999800000017 Z" opacity="1" tabindex="-1" role="img" aria-label="Apr, 601. 2024." style="outline: none;"></path><path fill="#f5800c" d="M 381 19.17 A 4 4 0 1 1 381.00399999933336 19.16999800000017 Z" opacity="1" tabindex="-1" role="img" aria-label="May, 663. 2024." style="outline: none;"></path></g></g><g data-z-index="3" aria-hidden="true"><g stroke-linecap="round" style="cursor: pointer;" transform="translate(466,10)"><text font-family='Montserrat-Regular,Montserrat' x="0" data-z-index="1" y="15.5" style="color: rgb(51, 51, 51); font-weight: normal; fill: rgb(51, 51, 51);"></text></g></g><text font-family='Montserrat-Regular,Montserrat' x="250" text-anchor="middle" data-z-index="4" style="color: rgb(51, 51, 51); font-size: 18px; fill: rgb(51, 51, 51);" y="24" aria-hidden="true">Electricity Bill</text><text font-family='Montserrat-Regular,Montserrat' x="250" text-anchor="middle" data-z-index="4" style="color: rgb(102, 102, 102); fill: rgb(102, 102, 102);" y="44" aria-hidden="true"></text><text font-family='Montserrat-Regular,Montserrat' x="10" text-anchor="start" data-z-index="4" style="color: rgb(102, 102, 102); fill: rgb(102, 102, 102);" y="197" aria-hidden="true"></text><g data-z-index="7" aria-hidden="true" transform="translate(219,159)"><rect fill="none" rx="0" ry="0" x="0" y="0" width="62" height="26"></rect><g data-z-index="1"><g><g data-z-index="1" transform="translate(8,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#f5800c" stroke-width="2"></path><path fill="#f5800c" d="M 8 15 A 4 4 0 1 1 8.003999999333336 14.999998000000167 Z" opacity="1"></path><text font-family='Montserrat-Regular,Montserrat' x="21" text-anchor="start" data-z-index="2" y="15" style="color: rgb(51, 51, 51); cursor: pointer; font-size: 12px; font-weight: bold; fill: rgb(51, 51, 51);">2024</text></g></g></g></g><g data-z-index="7" aria-hidden="true"><text font-family='Montserrat-Regular,Montserrat' x="108.4" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="146" opacity="1">Jan</text><text font-family='Montserrat-Regular,Montserrat' x="193.2" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="146" opacity="1">Feb</text><text font-family='Montserrat-Regular,Montserrat' x="278" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="146" opacity="1">Mar</text><text font-family='Montserrat-Regular,Montserrat' x="362.8" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="146" opacity="1">Apr</text><text font-family='Montserrat-Regular,Montserrat' x="447.6" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="146" opacity="1">May</text></g><g data-z-index="7" aria-hidden="true"><text font-family='Montserrat-Regular,Montserrat' x="51" text-anchor="end" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="91" opacity="1">600</text><text font-family='Montserrat-Regular,Montserrat' x="51" text-anchor="end" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="132" opacity="1">500</text><text font-family='Montserrat-Regular,Montserrat' x="51" text-anchor="end" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="50" opacity="1">700</text></g></svg>
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="meter_main col-md-6 ms-2 p-4">
+                    <h3>Meter Status</h3>
+    
+                    <div class="meter_card row pt-4">
+                        <img src="assests/images/energymeter.png" alt="" class="col-6">
+    
+                        <div class="meter_detials col-md-6 d-flex flex-column justify-content-evenly px-4">
+                            <span><p>Status</p> <p>working</p></span>
+                            <span><p>Model</p> <p>XXXXM6</p></span>
+                            <span><p>Average Fare</p> <p>RS 580/-</p></span>
+                            <span><p>Average kwh/Month</p> <p>100kwh</p></span>
+                            <span><p>Mode</p> <p>Smart</p></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="slab">
+            <div class="slab_detials col-10 col-md-12  d-flex p-4 mt-3 container-fluid row">
+
+                <div class="col-md-6 col-12 telescopic">
+                    <h3>Telescopic</h3>
+                    <div class="table col-md-10  d-flex justify-content-center">
+                        <table class="table table-striped col-10">
+                            <thead>
+                              <tr>
+                                <th >Slab (units)</th>
+                                <th >Tarrif Rate</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>0-50</td>
+                                <td>Rs 3.15</td>
+                              </tr>
+                              <tr>
+                                <td>51-100</td>
+                                <td>Rs 3.95</td>
+                              </tr>
+                              <tr>
+                                <td>101-150</td>
+                                <td>Rs 5.00</td>
+                              </tr>
+                              <tr>
+                                <td>151-200</td>
+                                <td>Rs 6.80</td>
+                              </tr>
+                              <tr>
+                                <td>201-250</td>
+                                <td>Rs 8.00</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+    
+                
+                <div class="col-md-6 col-12 non_telescopic">
+                    <h3>Non Telescopic</h3>
+                    <div class="table col-md-10 d-flex justify-content-center">
+                        <table class="table table-striped col-10">
+                            <thead>
+                              <tr>
+                                <th >Slab(units)</th>
+                                <th >Tarrif Rate</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>0-300</td>
+                                <td>Rs 5.80</td>
+                              </tr>
+                              <tr>
+                                <td>0-350</td>
+                                <td>Rs 6.60</td>
+                              </tr>
+                              <tr>
+                                <td>0-400</td>
+                                <td>Rs 6.90</td>
+                              </tr>
+                              <tr>
+                                <td>0-500</td>
+                                <td>Rs 7.10</td>
+                              </tr>
+                              <tr>
+                                <td>Above 500</td>
+                                <td>Rs 7.90</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </section>
+        
+        <section id="bill_card">
+            <div class="container-fluid col-12 user_main mt-3">
+
+                <div class="bill_detials col-md-6 col-12 p-4">
+                    <h3>Bill Detials</h3>
+                    <div class="col-10 d-flex mx-auto pt-4"> 
+                        <input type="text" placeholder="*Consumer Number" class="form-control">
+                        <button class="btn btn-outline-dark"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="user_detials col-10 mx-auto px-5 pt-3 ">
+                        <p>Owner Name <span>John</span></p>
+                        <p>Consumer Number <span>XXXXXXXX456</span></p>
+                        <p>Bill due<span>RS 650/-</span></p>
+                        <p>Due Month<span>April</span></p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+      </div>
+
+
+    </div>
+  </body>
+  <script
+  src="assests/js/index.js"
+  >
+  </script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</html>

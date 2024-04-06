@@ -1,0 +1,205 @@
+ :root{
+    --orange:#f5800c;
+    --green:#05ad4d;
+    --light-green:#83d7a6;
+    --white:#ffffff;
+    --grey:#a0a0a0;
+    --light-grey:#F5f5f5;
+}
+*{
+  font-family: "Montserrat", sans-serif;
+}
+p{
+    margin: 0px !important;
+}
+/* route starts */
+.router_sub{
+    position: fixed;
+    height: 100%;
+}
+.menu span{
+    margin:10px 0px;
+    padding:10px 20px;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-weight: 500;
+}
+.logout span{
+    cursor: pointer;
+}
+.menu i,.logout i{
+    padding: 0px 10px 0px 0px;
+}
+.menu span:hover{
+    background-color: var(--orange);
+    border-radius: 10px;
+    color: var(--white);
+}
+.actived{
+    background-color: var(--orange) !important;
+    border-radius: 10px !important;
+    color: var(--white) !important;
+}
+.routes .logo h2{
+    background-color: var(--green);
+    color: var(--white);
+    width: fit-content;
+    text-align: center;
+
+}
+
+/* route ends */
+
+/* navbar starts */
+.dashboard{
+    background-color: var(--light-grey);
+}
+
+.dashboard .searchbar input{
+    width: 80%;
+    border-radius: 50px;
+    border: 1px solid var(--grey) !important;
+}
+.dashboard .searchbar input:focus::placeholder{
+    color: transparent;
+    transition: all 0.1s;
+}
+.dashboard .searchbar input::placeholder{
+    font-size: 14px;
+    padding-left: 1rem;
+}
+.dashboard .profile{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--orange);
+}
+.dashboard .topics h2{
+    font-weight: 400;
+    cursor: pointer;
+}
+.dashboard .signin .profile, .dashboard .signin span{
+    cursor: pointer;
+}
+/* navbar ends */
+
+/* unit detials starts */
+.unit_detials .con h5,.applainces .consumed h5{
+    color: var(--orange);
+    margin: 0px !important;
+
+}
+.unit_detials .con p,.applainces .consumed p{
+    font-weight: 500;
+    margin: 0px !important;
+}
+.unit_detials .con,.applainces .consumed{
+    border-radius: 15px;
+    border: 1px solid var(--orange);
+    padding: 10px;
+}
+.unit_detials .sub3 span{
+    color: var(--green);
+    position: absolute;
+    right: 5px;
+    bottom: 6px;
+}
+.unit_detials .sub3{
+    position: relative;
+}
+.consumption_detials .img img{
+    width: 100%;
+}
+.consumption_container,.month,.applainces,.meter_main,.avg_detials,.slab_detials,.bill_detials{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+.row{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.con_main .con{
+    margin: 0px 0px 0px 5px;
+}
+
+.applainces select{
+    width: 40%;
+}
+.applainces option{
+    width: 40%;
+}
+.applainces img{
+    width: 70%;
+}
+/* unit detials ends */
+
+/* status starts */
+.month_card{
+    border: 1px solid var(--light-green);
+    border-radius: 12px;
+    color: var(--green);
+}
+.month .title p{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.meter_main .meter_card span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px  10px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.meter_main .meter_card span:nth-child(odd){
+    color: var(--orange);
+    border: 1px solid var(--orange);
+
+}
+.meter_main .meter_card span:nth-child(even){
+    color: var(--green);
+    border: 1px solid var(--green);
+}
+/* status ends */
+
+/* payments starts */
+.table{
+    width: 80% !important;
+}
+.table th, .table td{
+    text-align: center;
+    box-shadow: none !important;
+
+}
+.table tr{
+    font-weight: 600;
+
+}
+.table tr:nth-child(odd) td{
+    color: var(--green);
+    background-color: transparent !important;
+
+}
+
+.table tr:nth-child(even) td{
+    color: var(--orange);
+}
+/* payments ends */
+
+/* bill detialls */
+
+.bill_detials .user_detials p{
+    display: flex;
+    justify-content:space-between ;
+}
+.bill_detials input,.bill_detials button{
+    border-radius: 0px;
+    border-color: black;
+}
+.bill_detials input:focus::placeholder{
+    color: transparent;
+    transition: all .1s;
+}
