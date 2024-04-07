@@ -32,16 +32,16 @@
   <body>
     <div class="main col-12 d-flex">
 
-        <section class="routes col-md-2 d-none d-md-block ">
-            <div class="router_sub d-flex flex-column pt-2">
-                <div class="logo d-flex justify-content-center">
-                    <h2>Smart</h2>
+        <section class="routes col-md-2 col-6">
+            <div class="router_sub d-flex flex-column pt-2 ">
+                <div class="logo d-flex justify-content-center  ">
+                    <h2 class="px-2 py-1">Smart</h2>
                   </div>
-                  <div class="menu d-flex flex-column ps-3 justify-content-evenly pt-5">
-                    <span class="menu_optn actived"><i class="fa-solid fa-rectangle-list"></i>Dashboard</span>
-                    <span class="menu_optn"><i class="fa-solid fa-chart-line"></i>Analysis</span>
-                    <span class="menu_optn"><i class="fa-solid fa-credit-card"></i>Payments</span>
-                    <span class="menu_optn"><i class="fa-solid fa-folder"></i></i>Report Issue</span>
+                  <div class="menus d-flex flex-column ps-3 justify-content-evenly pt-5 col-10">
+                    <a href="#navbar" class="menu_optn actived"><i class="fa-solid fa-rectangle-list"></i>Dashboard</a>
+                    <a href="" class="menu_optn"><i class="fa-solid fa-chart-line"></i>Analysis</a>
+                    <a href="#slab" class="menu_optn"><i class="fa-solid fa-credit-card"></i>Payments</a>
+                    <a href="#report" class="menu_optn"><i class="fa-solid fa-circle-exclamation"></i>Report Issue</a>
                   </div>
                   <div class="logout ps-5 pt-5 mt-5">
                     <span><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</span>
@@ -51,30 +51,32 @@
       
 
 
-      <div class="dashboard col-md-10  pt-4 pb-5">
+      <div class="dashboard col-md-10 col-12  pt-4">
 
         <section id="navbar">
             <div class="nav_bar col-12 d-flex">
-                <div class="topics col-md-3 ps-3">
-                  <h2>DashBoard</h2>
+                <div class="topics col-md-3 col-3 ">
+                  <h2 class="d-none d-md-block ps-3">DashBoard</h2>
+                  <h2 class="d-block d-md-none logo ms-1 px-1">Smart</h2>
                 </div>
-                <div class="searchbar col-md-6">
-                  <input type="text" placeholder="Type in to Search" class="p-1 form-control"/>
+                <div class="searchbar col-md-6 col-5 ">
+                  <input type="text" placeholder="Type in to Search" class="p-md-1 ms-4 ms-md-0 form-control"/>
                 </div>
-                <div class="signin col-md-3 d-flex justify-content-center align-items-center">
-                  <img src="assests/images/user.jpg" class="profile me-2">
+                <div class="signin col-md-3 col-4  d-flex justify-content-md-center align-items-center">
+                  <img src="assests/images/user.jpg" class="profile me-md-2">
                   <span>John</span>
+                  <span class="d-block d-md-none ps-4"><input type="checkbox" role="button" aria-label="Display the menu" class="menu ham"></span>
                 </div>
               </div>
         </section>
         
         <section id=" user consumption">
-            <div class="unit_detials_main container-fluid col-12 mt-5 d-flex">
+            <div class="unit_detials_main container-fluid col-12 mt-5 d-flex flex-column flex-md-row">
 
-                <div class="consumption_container col-md-8 p-3">
+                <div class="consumption_container col-md-8 col-12 p-3">
                     <h3>Consumption</h3>
-                    <div class="d-flex consumption_detials pt-3">
-                        <div class="unit_detials container col-md-8 row g-3">
+                    <div class="d-flex consumption_detials col-12 pt-3">
+                        <div class="unit_detials container col-md-8 row col-12 g-3">
     
                             <div class="d-flex col-12 con_main">
                                 <div class="con col-4">
@@ -110,13 +112,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 img d-flex justify-content-center">
+                        <div class="col-md-4 d-none img d-md-flex justify-content-center">
                             <img src="assests/images/energymeter.png" alt="">
                         </div>
                     </div>
                 </div>
     
-                <div class="applainces col-md-4 mx-2 p-4 d-flex flex-column align-items-center">
+                <div class="applainces col-md-4 col-12 mx-2 p-4 d-flex flex-column align-items-center mt-3 mt-md-0">
                     <div class="title d-flex justify-content-between pb-2" >
                         <h3>Appliances</h3>
                         <select name="applainces" id="select_applainces">
@@ -143,38 +145,38 @@
         </section>
         
         <section id="meter detials">
-            <div class="status col-12 container-fluid pt-5 d-flex">
-                <div class="col-md-6 row">
+            <div class="status col-12 container-fluid pt-3 d-flex flex-column flex-md-row">
+                <div class="col-md-6 col-12 row">
     
-                    <div class="col-md-12 month p-4">
+                    <div class="col-md-12 month p-2  p-md-4">
                         <div class="d-flex justify-content-between col-12">
                             <div class="title d-flex flex-column justify-content-start">
                                 <h3>Monthy Consumption</h3>
                                 <p>updated few minutes ago</p>  
                             </div>
-                            <i class="fa-solid fa-arrow-right pt-5"></i>
+                            <i class="fa-solid fa-arrow-right pt-4"></i>
                         </div>
                         
                         <div class="month_detials d-flex justify-content-evenly">
     
-                            <div class="month_card p-3 d-flex flex-column justify-content-evenly align-items-center">
+                            <div class="month_card p-2 d-flex flex-column justify-content-evenly align-items-center">
                                 <h6>April</h6>
                                     <h5>RS 663 <i class="fa-solid fa-arrow-up"></i></h5>
                                    
                                 <h6>130 kwh</h6>
                             </div>
-                            <div class="month_card p-3 d-flex flex-column justify-content-evenly align-items-center">
+                            <div class="month_card p-2 d-flex flex-column justify-content-evenly align-items-center">
                                 <h6>April</h6>
                                     <h5>RS 663 <i class="fa-solid fa-arrow-down"></i></h5>
                                 <h6>130 kwh</h6>
                             </div>
-                            <div class="month_card p-3 d-flex flex-column justify-content-evenly align-items-center">
+                            <div class="month_card p-2 d-flex flex-column justify-content-evenly align-items-center">
                                 <h6>April</h6>
                                     <h5>RS 663 <i class="fa-solid fa-arrow-up"></i></h5>
                                    
                                 <h6>130 kwh</h6>
                             </div>
-                            <div class="month_card p-3 d-flex flex-column justify-content-evenly align-items-center">
+                            <div class="month_card p-2 d-flex flex-column justify-content-evenly align-items-center">
                                 <h6>April</h6>
                                     <h5>RS 663 <i class="fa-solid fa-arrow-up"></i></h5>
                                    
@@ -192,14 +194,14 @@
                     </div>
                 </div>
     
-                <div class="meter_main col-md-6 ms-2 p-4">
+                <div class="meter_main col-md-6 col-12 ms-2 p-4 mt-3 mt-md-0">
                     <h3>Meter Status</h3>
     
-                    <div class="meter_card row pt-4">
-                        <img src="assests/images/energymeter.png" alt="" class="col-6">
+                    <div class="meter_card row ">
+                        <img src="assests/images/energymeter.png" alt="" class="col-6 pt-4 pb-4 pb-md-0">
     
-                        <div class="meter_detials col-md-6 d-flex flex-column justify-content-evenly px-4">
-                            <span><p>Status</p> <p>working</p></span>
+                        <div class="meter_detials col-6 d-flex flex-column justify-content-evenly px-0">
+                            <span class="py-1"><p>Status</p> <p>working</p></span>
                             <span><p>Model</p> <p>XXXXM6</p></span>
                             <span><p>Average Fare</p> <p>RS 580/-</p></span>
                             <span><p>Average kwh/Month</p> <p>100kwh</p></span>
@@ -211,12 +213,12 @@
         </section>
         
         <section id="slab">
-            <div class="slab_detials col-10 col-md-12  d-flex p-4 mt-3 container-fluid row">
+            <div class="slab_detials col-12 col-md-12  d-flex p-4 mt-3 container-fluid row">
 
                 <div class="col-md-6 col-12 telescopic">
-                    <h3>Telescopic</h3>
-                    <div class="table col-md-10  d-flex justify-content-center">
-                        <table class="table table-striped col-10">
+                    <h3 class="col-12">Telescopic</h3>
+                    <div class="table col-12 d-flex justify-content-center">
+                        <table class="table table-striped col-12">
                             <thead>
                               <tr>
                                 <th >Slab (units)</th>
@@ -291,7 +293,7 @@
         </section>
         
         <section id="bill_card">
-            <div class="container-fluid col-12 user_main mt-3">
+            <div class="container-fluid col-12 user_main mt-3 d-flex flex-column flex-md-row">
 
                 <div class="bill_detials col-md-6 col-12 p-4">
                     <h3>Bill Detials</h3>
@@ -307,9 +309,78 @@
                     </div>
 
                 </div>
+                <div class="col-md-4 col-12 payment_detials d-flex flex-column mt-3 mt-md-0">
+                    <div class="history col-12 p-4 mb-1 ms-1 d-flex justify-content-between">
+                        <button class="button p-2"><i class="fa-solid fa-coins"></i> Transactions</button>
+                        <button class="button p-2"><i class="fa-solid fa-wallet"></i> Wallet</button>
+                    </div>
+                    <div class="col-12 payment p-4 ms-1">
+                        <h3>Bill Due</h3>
+                        <div class="payment_optn d-flex flex-column justify-content-center align-items-center  pt-1">
+                            <h2>RS 630/-</h2>
+                            <buttton class="button p-2 px-2">PAY NOW</buttton>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-2 col-12 offers d-flex flex-md-column ms-2 mt-3 mt-md-0">
+                    <div class="offers_card d-flex flex-column justify-content-center px-2 col-6 col-md-12 py-5 py-md-0">
+                        <h6>Make a payment</h6>
+                        <p>10% assuerd cashback</p>
+                        <a href="">Pay Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="offers_card d-flex flex-column justify-content-center px-2 mt-1 col-6 col-md-12 py-5 py-md-0 ms-1 ms-md-0">
+                        <h6>Make a payment</h6>
+                        <p>10% assuerd cashback</p>
+                        <a>Pay Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
+        <section id="report">
+            <div class="col-12 report_issue mt-3 d-flex container-fluid flex-column flex-md-row">
+
+                <div class="col-md-8 col-12 report_form p-4">
+                    <h4>Complaints</h4>
+                    <div class="form col-md-8 col-12 mx-auto d-flex flex-column">
+                        <input type="text" placeholder="*NAME" class="m-1 form-control" required>
+                        <input type="email" placeholder="*EMAIL" class="m-1 form-control" required>
+                        <textarea placeholder="*ISSUE" rows="3" class="m-1 form-control" required></textarea>
+                        <button class="btn btn-outline-dark col-4 mx-auto mt-2">Submit</button>
+                    </div>
+                </div>
+
+                <div class="reach_out col-md-4 d-flex flex-column ms-1 mt-1 mt-md-0">
+                    <div class="address p-4 mb-1">
+                        <h4>Reach Us</h4>
+                        <div class="address_detials d-flex flex-column">
+                            <p class="ps-3">
+                                456, Sunshine Apartments <br>
+                                Kochi, Kerala ,India<br>
+                                PIN: 682001 <br>
+                                <span>+91 98765 43210</span>
+                                <span>info@example.com</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="connect_us p-4">
+                        <h4>Connect Us</h4>
+                        <div class="media d-flex justify-content-between col-md-6 col-5 px-3 py-2 mx-auto">
+                            <span><i class="fa-brands fa-facebook"></i></span>
+                            <span><i class="fa-brands fa-instagram"></i></span>
+                            <span><i class="fa-brands fa-twitter"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright col-12 container-fluid d-flex justify-content-center my-2">
+                <div ><span class="pt-2">&copy;</span> Copyright | 2024 Smart services private limited</div>
+            </div>
+        </section>
       </div>
 
 

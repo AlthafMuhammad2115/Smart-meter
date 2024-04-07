@@ -5,6 +5,7 @@
     --white:#ffffff;
     --grey:#a0a0a0;
     --light-grey:#F5f5f5;
+    --black:black;
 }
 *{
   font-family: "Montserrat", sans-serif;
@@ -12,25 +13,35 @@
 p{
     margin: 0px !important;
 }
-/* route starts */
-.router_sub{
-    position: fixed;
-    height: 100%;
+a{
+    text-decoration: none !important;
 }
-.menu span{
+/* route starts */
+
+
+.routes{
+    position: sticky;
+    height: 100%;
+    background-color: var(--white);
+    z-index: 1000;
+    top: 0;
+}
+.menus .menu_optn{
     margin:10px 0px;
     padding:10px 20px;
     transition: all 0.2s;
     cursor: pointer;
     font-weight: 500;
+    color: black;
+
 }
-.logout span{
+.logout .menu_optn{
     cursor: pointer;
 }
-.menu i,.logout i{
+.menus i,.logout i{
     padding: 0px 10px 0px 0px;
 }
-.menu span:hover{
+.menus .menu_optn:hover{
     background-color: var(--orange);
     border-radius: 10px;
     color: var(--white);
@@ -41,11 +52,91 @@ p{
     color: var(--white) !important;
 }
 .routes .logo h2{
-    background-color: var(--green);
-    color: var(--white);
+    background-color: var(--black);
+    color: var(--orange);
     width: fit-content;
     text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 300;
 
+}
+@media only screen and (max-width: 760px){
+    .routes{
+        position: fixed;
+        z-index: 1000;
+        left: -1000px;
+        transition: all .3s;
+    }
+    .active{
+        left: 0;
+    }
+    .main{
+        overflow: hidden;
+    }
+
+    .menu {
+        --s: 20px; /* control the size */
+        --c: var(--green); /* the color */
+        
+        height: var(--s);
+        aspect-ratio: 1;
+        border: none;
+        padding: 0;
+        border-inline: calc(var(--s)/2) solid #0000; 
+        box-sizing: content-box;
+        --_g1: linear-gradient(var(--c) 20%,#0000 0 80%,var(--c) 0) 
+               no-repeat content-box border-box;
+        --_g2: radial-gradient(circle closest-side at 50% 12.5%,var(--c) 95%,#0000) 
+               repeat-y content-box border-box;
+        background: 
+          var(--_g2) left  var(--_p,0px) top,
+          var(--_g1) left  calc(var(--s)/10 + var(--_p,0px)) top,
+          var(--_g2) right var(--_p,0px) top,
+          var(--_g1) right calc(var(--s)/10 + var(--_p,0px)) top;
+        background-size: 
+          20% 80%,
+          40% 100%;
+        position: relative;
+        clip-path: inset(0 25%);
+        -webkit-mask: linear-gradient(90deg,#0000,#000 25% 75%,#0000);
+        cursor: pointer;
+        transition: 
+          background-position .3s var(--_s,.3s), 
+          clip-path 0s var(--_s,.6s);
+        -webkit-appearance:none;
+        -moz-appearance:none;
+        appearance:none;
+      }
+      .menu:before,
+      .menu:after {
+        content:"";
+        position: absolute;
+        border-radius: var(--s);
+        inset: 40% 0;
+        background: var(--c);
+        transition: transform .3s calc(.3s - var(--_s,.3s));
+      }
+      
+      .menu:checked {
+        clip-path: inset(0);
+        --_p: calc(-1*var(--s));
+        --_s: 0s;
+      }
+      .menu:checked:before {
+        transform: rotate(45deg);
+      }
+      .menu:checked:after {
+        transform: rotate(-45deg);
+      }
+      .menu:focus-visible {
+        clip-path: none;
+        -webkit-mask: none;
+        border: none;
+        outline: 2px solid var(--c);
+        outline-offset: 5px;
+      }
+      
 }
 
 /* route ends */
@@ -54,7 +145,18 @@ p{
 .dashboard{
     background-color: var(--light-grey);
 }
-
+.dashboard .ham{
+    font-size: 20px;
+}
+.dashboard .logo{
+    background-color: var(--black);
+    color: var(--orange);
+    width: fit-content;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 300;
+}
 .dashboard .searchbar input{
     width: 80%;
     border-radius: 50px;
@@ -66,7 +168,6 @@ p{
 }
 .dashboard .searchbar input::placeholder{
     font-size: 14px;
-    padding-left: 1rem;
 }
 .dashboard .profile{
     height: 50px;
@@ -110,7 +211,8 @@ p{
 .consumption_detials .img img{
     width: 100%;
 }
-.consumption_container,.month,.applainces,.meter_main,.avg_detials,.slab_detials,.bill_detials{
+.consumption_container,.month,.applainces,.meter_main,.avg_detials,.slab_detials,
+.bill_detials,.payment,.history,.offers_card,.report_form,.connect_us,.address{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 20px;
     background-color: var(--white);
@@ -163,11 +265,17 @@ p{
     color: var(--green);
     border: 1px solid var(--green);
 }
+/* @media only screen and (max-width: 600px) {
+    .meter_card .meter_detials span{
+        padding: 5px 0px;
+    }
+} */
+
 /* status ends */
 
 /* payments starts */
 .table{
-    width: 80% !important;
+    width: 80% ;
 }
 .table th, .table td{
     text-align: center;
@@ -202,4 +310,93 @@ p{
 .bill_detials input:focus::placeholder{
     color: transparent;
     transition: all .1s;
+}
+
+.button{
+    border-radius: 15px;
+    color: var(--orange);
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid var(--orange);
+    background-color: var(--white);
+}
+.button:hover{
+    background-color: var(--orange);
+    color: var(--white);
+    transition: all .1s;
+}
+.payment .payment_optn h2{
+    color: var(--green);
+}
+.offers_card{
+    background-image: url(../images/offer.jpg);
+    height: 50%;
+}
+.offers_card h6{
+    color: var(--white);
+    font-weight: 600;
+    margin: 0px !important;
+}
+.offers_card p{
+    font-size: 12px;
+    color: var(--white);
+    margin: 0pc !important;
+}
+.offers_card a{
+    font-size: 12px;
+    color: var(--white) ;
+
+}
+.offers_card a:hover{
+    color: var(--orange);
+}
+
+/* bill detials ends */
+
+/* report starts */
+
+.report_form .form input,.report_form .form textarea{
+    border: 1px solid black;
+    border-radius: 0px;
+}
+.report_form .form input::placeholder,.report_form .form textarea::placeholder{
+    color: black;
+}
+.report_form .form input:focus::placeholder,.report_form .form textarea:focus::placeholder{
+    color: transparent;
+    transition: all .1s;
+}
+.report_form .form button{
+    border-radius: 0px;
+}
+.connect_us .media span{
+    color: var(--green);
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 20px;
+}
+.connect_us .media span:hover{
+    transform: scale(1.2);
+    transition: all .1s;
+}
+.connect_us .media{
+    border: 2px solid var(--orange);
+    border-radius: 15px;
+}
+.connect_us{
+    height: 40%;
+}
+.address{
+    height: 60%;
+}
+.reach_out .address_detials p{
+    color: var(--orange);
+    font-weight: 600;
+}
+.copyright{
+    font-weight: 600;
+    font-size: 12px;
+}
+.copyright span{
+    font-size: 15px;
 }

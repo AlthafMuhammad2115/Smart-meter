@@ -8,3 +8,10 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " actived";
   });
 }
+
+var ham=document.getElementsByClassName('ham');
+var routes=document.getElementsByClassName('routes')
+ham[0].addEventListener('click',()=>{
+    routes[0].classList.toggle('active');
+
+})
