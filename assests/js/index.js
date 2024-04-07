@@ -9,9 +9,13 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-var ham=document.getElementsByClassName('ham');
+var slide=document.getElementsByClassName('slide');
+console.log(slide);
 var routes=document.getElementsByClassName('routes')
-ham[0].addEventListener('click',()=>{
-    routes[0].classList.toggle('active');
 
-})
+for(var i=0;i<slide.length;i++){
+    slide[i].addEventListener('click',()=>{
+        routes[0].classList.toggle('active');
+    })
+}
+
