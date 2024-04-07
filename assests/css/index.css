@@ -33,13 +33,14 @@ a{
     cursor: pointer;
     font-weight: 500;
     color: black;
+    width: max-content;
 
 }
 .logout .menu_optn{
     cursor: pointer;
 }
 .menus i,.logout i{
-    padding: 0px 10px 0px 0px;
+    /* padding: 0px 0px 0px 0px; */
 }
 .menus .menu_optn:hover{
     background-color: var(--orange);
